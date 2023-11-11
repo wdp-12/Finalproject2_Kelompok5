@@ -1,6 +1,6 @@
 const btnLogin = document.getElementById('btn-login');
 const btnSign = document.getElementById('btn-sign');
-const buttonMenu = document.querySelector('.btn-menu');
+const buttonMenu = document.querySelector('.button-menu');
 const navLinks = document.querySelector('.nav-links');
 
 function handleButtonClick(button, otherButton) {

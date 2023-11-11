@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
 :root {
+    --white: #ffffff;
     --primary: #234CAD;
     ---secondary: #F2F6FF;
-    --white: #F2F6FF;
+   
 }
 
 * {
     color: #234CAD;
     font-family: "Nunito", sans-serif;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     border: none;
     outline: none;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: whte;
+    background-color: white;
     font-size: 16px;
 }
 
-
+/*Header*/
 header section {
     width: 100%;
     padding: 0 100px;
@@ -28,35 +29,6 @@ header section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.btn-menu {
-    background-color: #F2F6FF;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.btn-menu span {
-    width: 20px;
-    height: 4px;
-    border-radius: 10px;
-    background-color:  #234CAD;;
-    transition: transform 0.3s;
-}
-
-.btn-menu.active span:nth-child(1) {
-    transform: rotate(45deg) translate(2px, 4px);
-}
-
-.btn-menu.active span:nth-child(2) {
-    transform: rotate(-45deg) translate(2px, -4px);
 }
 
 .nav-links {
@@ -80,9 +52,40 @@ header section {
 }
 
 .nav-links ul li a:hover {
-    color: #234cadb1; 
+    color: rgb(0, 25, 85)
 }
 
+
+.button-menu {
+    background-color: #F2F6FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    gap: 5px;
+}
+
+.button-menu span {
+    width: 20px;
+    height: 4px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    background-color:  #234CAD;;
+}
+
+.button-menu.active span:nth-child(1) {
+    transform: rotate(45deg) 
+    translate(2px, 4px);
+}
+
+.button-menu.active span:nth-child(2) {
+    transform: rotate(-45deg) 
+    translate(2px, -4px);
+}
 
 section .button {
     display: flex;
@@ -101,12 +104,11 @@ section .button {
 
 .button #btn-login:hover,
 .button #btn-sign:hover {
-    filter: drop-shadow(3px 3px 5px #00000010);
+    filter: drop-shadow(3px 3px 5px #0a06ff10);
     cursor: pointer;
 }
 
 .button #btn-login {
-    /* border: 3px solid var(--primary); */
     outline: solid 3px var(--primary);
     background-color: #fff;
 }
@@ -116,16 +118,273 @@ section .button {
     background-color: var(---secondary);
 }
 
+/* Section 1 */
+.section1 {
+    position: relative;
+    width: auto;
+    height: 575px;
+    margin: 100px;
+    border-radius: 60px;
+    background-color: var(---secondary);
+    display: flex;
+}
+.text-content:first-child {
+    width: 375px;
+    height: 100%;
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
 
+.text-content:first-child h1 {
+    font-size: 3em;
+}
 
-/*Animasi Circle */
-@keyframes circle-progress {
-    0%, 100% {
-        background: radial-gradient(closest-side, white 90%, transparent 80% 100%);
-    }
+.text-content:first-child button {
+    width: 200px;
+    height: 65px;
+    font-size: 1.37em;
+    font-weight: 700;
+    border-radius: 100px;
+    border: 3px solid var(--primary);
+    background-color: var(---secondary);
+    transition: all 0.3s;
+}
 
-    20%, 40%, 65%, 80% {
-        background: radial-gradient(closest-side, white 90%, transparent 80% 100%),
-                    conic-gradient(from 0deg, var(--primary) 25%, var(--secondary) 0);
-    }
+.text-content:first-child button:hover {
+    filter: drop-shadow(3px 3px 5px #00000030);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Card Container */
+.section1 .card-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 15px;
+}
+
+/* Card 1 and Card 8 */
+.card1,
+.card8 {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.card1 img,
+.card8 img {
+    position: relative;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Card 2, Card 4, Card 6, and Card 7 */
+.card2 .card-content,
+.card4 .card-content,
+.card6 .card-content,
+.card7 .card-content {
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.card2 .card-content .progress img,
+.card5 .card-content .progress img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: var(---secondary);
+    border-radius: 100px;
+}
+
+.card2 .card-content .progress,
+.card5 .card-content .progress {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: infinite circle-progress 2s;
+}
+
+.card2 .card-content .progress:hover,
+.card5 .card-content .progress:hover {
+    animation: none;
+    cursor: pointer;
+}
+
+/* Card 3 */
+.card3 .card-content {
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card3 .card-content div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.card3 .card-content .icon,
+.card4 .card-content .icon,
+.card6 .card-content .icon,
+.card7 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card3 .card-content .icon {
+    border: 3px solid var(--primary);
+}
+
+.card3 .card-content .meeting-parts {
+    display: flex;
+    margin: 0 20px;
+}
+
+.meeting-parts div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.625em;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(---secondary);
+    padding-top: 15px;
+}
+
+.meeting-parts div:nth-child(2) {
+    position: relative;
+    left: -10px;
+}
+
+.meeting-parts div:nth-child(3) {
+    position: relative;
+    left: -20px;
+}
+
+.meeting-parts div:last-child {
+    position: relative;
+    left: -30px;
+}
+
+/* Card 4, Card 6, and Card 7 */
+.card4 .card-content .icon,
+.card6 .card-content .icon,
+.card7 .card-content .icon {
+    position: relative;
+    font-weight: 700;
+    background-color: var(---secondary);
+}
+
+.card4 .card-content .icon .notif,
+.card6 .card-content .icon .notif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(--primary);
+}
+
+.card4 .card-content .icon .notif p,
+.card6 .card-content .icon .notif p {
+    margin-top: 15px;
+    font-size: 8px;
+    color: white;
+}
+
+.card4 .card-content .text-content,
+.card6 .card-content .text-content {
+    position: relative;
+    width: 230px;
+    height: 45px;
+}
+
+.card4 .card-content .text-content p:nth-child(3),
+.card6 .card-content .text-content p:nth-child(3) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* Card 5 */
+.card5 .card-content {
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    width: 130px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card5 .card-content .progress:hover {
+    background:
+        radial-gradient(closest-side, white 90%, transparent 80% 100%),
+        conic-gradient(var(--primary) 75%, var(---secondary) 0);
+}
+
+.card5 .card-content .progress {
+    margin-top: 0;
+}
+
+.card5 .card-content .text-content p {
+    font-size: 0.75em;
+}
+
+/* Card 6 */
+.card6 .card-content {
+    position: absolute;
+    bottom: 220px;
+    left: 300px;
+}
+
+/* Card 7 */
+.card7 .card-content {
+    position: absolute;
+    bottom: 95px;
+    left: 400px;
+}
+
+/* Card 8 */
+.card8 {
+    position: absolute;
+    bottom: -5px;
+    left: 375px;
 }
