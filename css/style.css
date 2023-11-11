@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
 :root {
+    --white: #ffffff;
     --primary: #234CAD;
     ---secondary: #F2F6FF;
-    --white: #F2F6FF;
+   
 }
 
 * {
     color: #234CAD;
     font-family: "Nunito", sans-serif;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     border: none;
     outline: none;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: whte;
+    background-color: white;
     font-size: 16px;
 }
 
-
+/*Header*/
 header section {
     width: 100%;
     padding: 0 100px;
@@ -28,35 +29,6 @@ header section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.btn-menu {
-    background-color: #F2F6FF;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.btn-menu span {
-    width: 20px;
-    height: 4px;
-    border-radius: 10px;
-    background-color:  #234CAD;;
-    transition: transform 0.3s;
-}
-
-.btn-menu.active span:nth-child(1) {
-    transform: rotate(45deg) translate(2px, 4px);
-}
-
-.btn-menu.active span:nth-child(2) {
-    transform: rotate(-45deg) translate(2px, -4px);
 }
 
 .nav-links {
@@ -80,9 +52,40 @@ header section {
 }
 
 .nav-links ul li a:hover {
-    color: #234cadb1; 
+    color: rgb(0, 25, 85)
 }
 
+
+.button-menu {
+    background-color: #F2F6FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    gap: 5px;
+}
+
+.button-menu span {
+    width: 20px;
+    height: 4px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    background-color:  #234CAD;;
+}
+
+.button-menu.active span:nth-child(1) {
+    transform: rotate(45deg) 
+    translate(2px, 4px);
+}
+
+.button-menu.active span:nth-child(2) {
+    transform: rotate(-45deg) 
+    translate(2px, -4px);
+}
 
 section .button {
     display: flex;
@@ -101,12 +104,11 @@ section .button {
 
 .button #btn-login:hover,
 .button #btn-sign:hover {
-    filter: drop-shadow(3px 3px 5px #00000010);
+    filter: drop-shadow(3px 3px 5px #0a06ff10);
     cursor: pointer;
 }
 
 .button #btn-login {
-    /* border: 3px solid var(--primary); */
     outline: solid 3px var(--primary);
     background-color: #fff;
 }
@@ -116,7 +118,8 @@ section .button {
     background-color: var(---secondary);
 }
 
-.hero-section {
+/* Section 1 */
+.section1 {
     position: relative;
     width: auto;
     height: 575px;
@@ -125,52 +128,6 @@ section .button {
     background-color: var(---secondary);
     display: flex;
 }
-
-.text-content:first-child {
-    width: 375px;
-    height: 100%;
-    margin: 0 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-evenly;
-}
-
-.text-content:first-child h1 {
-    font-size: 3em;
-}
-
-.text-content:first-child button {
-    width: 200px;
-    height: 65px;
-    font-size: 1.37em;
-    font-weight: 700;
-    border-radius: 100px;
-    border: 3px solid var(--primary);
-    background-color: var(---secondary);
-    transition: all 0.3s;
-}
-
-.text-content:first-child button:hover {
-    filter: drop-shadow(3px 3px 5px #00000030);
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-/* GAYA KODINGAN CSS DENGAN PERUBAHAN GAYA SINTAKS */
-
-/* Hero Section */
-.hero-section {
-    position: relative;
-    width: auto;
-    height: 575px;
-    margin: 100px;
-    border-radius: 60px;
-    background-color: var(---secondary);
-    display: flex;
-}
-
-/* Text Content in Hero Section */
 .text-content:first-child {
     width: 375px;
     height: 100%;
@@ -203,12 +160,13 @@ section .button {
 }
 
 /* Card Container */
-.hero-section .card-container {
+.section1 .card-container {
     position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    font-size: 15px;
 }
 
 /* Card 1 and Card 8 */
@@ -312,11 +270,12 @@ section .button {
     justify-content: center;
     font-size: 0.625em;
     font-weight: 700;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 100px;
     border: 2px solid white;
     background-color: var(---secondary);
+    padding-top: 15px;
 }
 
 .meeting-parts div:nth-child(2) {
@@ -360,7 +319,8 @@ section .button {
 
 .card4 .card-content .icon .notif p,
 .card6 .card-content .icon .notif p {
-    font-size: 0.375em;
+    margin-top: 15px;
+    font-size: 8px;
     color: white;
 }
 
