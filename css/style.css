@@ -389,6 +389,300 @@ section .button {
     left: 375px;
 }
 
+/* Section 2 */
+.section2 {
+    position: relative;
+    width: auto;
+    margin: 100px;
+    border-radius: 60px;
+}
+
+.cloud, .lock  {
+    position: relative;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0px 50px;
+    background-color: var(---secondary);  
+}
+
+.cloud img,
+.lock img {
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+}
+
+.content2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardteam {
+    width: auto;
+    height: 575px;
+    padding: 0px 100px;
+    border-radius: 60px;
+    background-color: var(---secondary);
+}
+
+/* Card 9, 10, 11 */
+.card9 .card-content .icon .name,
+.card10 .card-content .icon .name,
+.card11 .card-content .icon .name {
+    position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+}
+
+/* Card 9 */
+.card9 .card-content {
+    width: 450px;
+    height: 125px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+.card9 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card9 .card-content .icon {
+    position: relative;
+    font-weight: 700;
+    background-color: var(---secondary);
+}
+
+.card9 .card-content .icon p {
+    font-size: 20px;
+}
+
+.card9 .card-content .icon .notif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(--primary);
+}
+
+.card9 .card-content .icon .notif p {
+    margin-top: 15px;
+    font-size: 8px;
+    color: white;
+}
+
+.card9 .card-content .text-content {
+    position: relative;
+    font-size: 19px;
+    width: 300px;
+    height: 45px;
+}
+
+.card9 .card-content .text-content p:nth-child(3) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* Card 10 */
+.card10 .card-content {
+    width: 430px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    opacity: 80%;
+    padding: 25px;
+}
+
+.card10 .card-content .icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card10 .card-content .icon {
+    position: relative;
+    font-weight: 700;
+    background-color: var(---secondary);
+}
+
+.card10 .card-content .icon p {
+    font-size: 15px;
+}
+
+.card10 .card-content .icon .notif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(--primary);
+}
+
+.card10 .card-content .icon .notif p {
+    margin-top: 15px;
+    font-size: 6px;
+    color: white;
+}
+
+.card10 .card-content .text-content {
+    position: relative;
+    font-size: 16px;
+    width: 250px;
+    height: 45px;
+}
+
+.card10 .card-content .text-content {
+    position: relative;
+    width: 250px;
+    height: 45px;
+}
+
+.card10 .card-content .text-content p:nth-child(3) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* Card 11 */
+.card11 .card-content {
+    width: 340px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    opacity: 70%;
+    padding: 25px;
+}
+
+.card11 .card-content .icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card11 .card-content .icon {
+    position: relative;
+    font-weight: 700;
+    background-color: var(---secondary);
+}
+
+.card11 .card-content .icon p {
+    font-size: 13px;
+}
+
+.card11 .card-content .icon .notif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(--primary);
+}
+
+.card11 .card-content .icon .notif p {
+    margin-top: 15px;
+    font-size: 6px;
+    color: white;
+}
+
+.card11 .card-content .text-content {
+    position: relative;
+    font-size: 14px;
+    width: 250px;
+    height: 45px;
+}
+
+.card11 .card-content .text-content {
+    position: relative;
+    width: 250px;
+    height: 45px;
+}
+
+.card11 .card-content .text-content p:nth-child(3) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* Message Content */
+.message-content:first-child {
+    width: 400px;
+    height: auto;
+}
+
+.message-content:first-child h1 {
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+.message-content:first-child button {
+    width: 200px;
+    height: 65px;
+    font-size: 1.37em;
+    font-weight: 700;
+    border-radius: 100px;
+    border: 3px solid var(--primary);
+    background-color: white;
+    transition: all 0.3s;
+    margin-top: 50px;
+}
+
+.message-content:first-child button:hover {
+    filter: drop-shadow(3px 3px 5px #00000030);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /*section6*/
 .sec-6{
     position: relative;
