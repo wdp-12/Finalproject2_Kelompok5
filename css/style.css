@@ -19,6 +19,9 @@
 body {
     background-color: white;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*Header*/
@@ -681,6 +684,202 @@ section .button {
     filter: drop-shadow(3px 3px 5px #00000030);
     transform: scale(1.1);
     cursor: pointer;
+}
+
+/*section4*/
+.section4{
+    position: relative;
+    width: auto;
+    height: 575px;
+    margin: 100px;
+    border-radius: 60px;
+    display: flex;
+}
+
+.section4 button{
+    width: 200px;
+    height: 65px;
+    font-size: 1.37em;
+    font-weight: 700;
+    border-radius: 100px;
+    border: 2px solid var(--primary);
+    background-color: var(--white);
+    transition: all 0.3s;
+}
+
+.section4 button:hover{
+    filter: drop-shadow(3px 3px 5px #00000030);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card-container{
+    position: relative;
+    width: auto;
+    height: 575px;
+    margin: 100px;
+    border-radius: 60px;
+    background-color: var(---secondary);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: center;
+}
+
+.card {
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card div:first-child{
+    display: flex;
+    align-items: center;
+}
+.card .icon{
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--primary);
+}
+.card .meeting-parts {
+    display: flex;
+    margin: 0 20px;
+}
+
+.meeting-parts div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.625em;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: var(---secondary);
+    padding-top: 15px;
+}
+
+/*section5*/
+.section5 h1{
+    position: relative;
+    width: auto;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.section5 p {
+    text-align: center;
+    margin-bottom: 4rem;
+    justify-content: center;
+}
+
+.content .card12 {
+    margin-left: 40px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-color: var(---secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border: none;
+}
+
+.content .card13 {
+    margin-left: 40px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border: 3px solid var(--primary);
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content .card12 div:first-child,
+.content .card13 div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.content .card12 .title,
+.content .card13 .title {
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+}
+.content .card12 h3,
+.content .card13 h3 {
+    position: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.content .card12 button{
+    padding: 12px 35px;
+    position: center;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 165px;
+    font-size: 1.37em;
+    font-weight: 700;
+    border-radius: 100px;
+    background-color: var(--white);
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-left: 3rem;
+    margin-bottom: 6rem;
+}
+
+.content .card13 button{
+    padding: 12px 35px;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 165px;
+    font-size: 1.37em;
+    font-weight: 700;
+    border-radius: 100px;
+    border: 3px solid var(--primary);
+    background-color: var(--white);
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-left: 3rem;
+    margin-bottom: 6rem;
+}
+
+.content .card13:hover{
+    box-shadow: 5px 7px 67px -28px rgb(23, 0, 226);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /*section6*/
