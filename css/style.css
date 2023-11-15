@@ -396,7 +396,7 @@ section .button {
     height: auto;
     margin: 100px;
     border-radius: 60px;
-    background-color: var(---secondary);
+    background-color: #F2F6FF;
     display: flex;
     justify-content: center;
     color: #234CAD;
