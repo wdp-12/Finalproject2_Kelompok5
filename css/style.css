@@ -713,11 +713,11 @@ section .button {
     cursor: pointer;
 }
 
-.card-container{
+.section4 .card-container{
     position: relative;
     width: auto;
     height: 575px;
-    margin: 100px;
+    margin: 25px;
     border-radius: 60px;
     background-color: var(---secondary);
     display: flex;
@@ -725,6 +725,7 @@ section .button {
     flex-wrap: wrap;
     flex-direction: column;
     align-self: center;
+    overflow: hidden;
 }
 
 .card {
@@ -735,6 +736,9 @@ section .button {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-right: 25px;
+    top: 80px;
+    left: 70px;
 }
 
 .card div:first-child{
