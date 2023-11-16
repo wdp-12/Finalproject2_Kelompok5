@@ -6,6 +6,19 @@
    
 }
 
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
 * {
     color: #234CAD;
     font-family: "Nunito", sans-serif;
@@ -1005,7 +1018,7 @@ section .button {
     height: auto;
     margin: 100px;
     border-radius: 60px;
-    background-color: #F2F6FF;
+    background-color: var(---secondary);
     display: flex;
     justify-content: center;
     color: #234CAD;
@@ -1052,3 +1065,24 @@ section .button {
     display: flex;
     justify-content: center;
 }
+
+/*Card Animation*/
+
+.card1,.card2,.card3,.card4,
+.card6,.card7,.card8,.card9,
+.card10,.card11,.card12,.card13 {
+    animation: pop-in 2s ease-out forwards;
+}
+
+.card1 { animation-delay: 0.1s; }
+.card2 { animation-delay: 0.2s; }
+.card3 { animation-delay: 0.3s; }
+.card4 { animation-delay: 0.4s; }
+.card6 { animation-delay: 0.6s; }
+.card7 { animation-delay: 0.7s; }
+.card8 { animation-delay: 0.8s; }
+.card9 { animation-delay: 3s; }
+.card10 { animation-delay: 3s; }
+.card11 { animation-delay: 3s; }
+.card12 { animation-delay: 3s; }
+.card13 { animation-delay: 3s; }
